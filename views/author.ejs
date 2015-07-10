@@ -3,11 +3,37 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <img src="/images/gel.jpeg"/>
-    <footer><a href="https://github.com/gelcorejs/QuizMiriada">Proyecto Quiz</a></footer>
+    <hr/>
+     <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/author">Author</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+       <div class="left">
+           <h3>Sobre Mi:</h3>
+           <p>
+               Mexicano, actualmente trabajo en la aplicacion de piso industrial (si otro rollo),
+               graduado en Ingenieria Electronica (no ejerzo), todo este asunto de lo web lo mantengo 
+               como hobie y si espero poder sacar provecho de esto, bueno sin mas dejo un poco de mis 
+               redes sociales:
+           </p>
+           <ol>
+               <li><a><img src="/images/twitter.svg" type=""/></a></li>
+               <li><a><img src="/images/github.svg"/></a></li>
+               <li><a><img src="/images/youtube30.svg"/></a></li>
+           </ol>
+       </div>
+       <div class="right">
+           <img src="/images/gel.jpeg"/>
+       </div>
+    </div>
+    
+    <footer><a href="https://github.com/gelcorejs/QuizMiriada">Proyecto Quiz en GITHUB</a></footer>
   </body>
 </html>
