@@ -8,7 +8,7 @@ hr{
     height: 10px;
 }
 nav{
-    width:350px;
+    width:450px;
     margin: 30px auto;
 }
 nav ul li{
@@ -26,6 +26,10 @@ nav ul li a{
     width:1000px;
     height: auto;
     margin: 50px auto;
+}
+.contenedor p{
+    font-family:monospace;
+    font-size:1.5em; 
 }
 .right img{
     width:100%;

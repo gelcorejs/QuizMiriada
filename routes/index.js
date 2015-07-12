@@ -1,10 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+//controladores
+var quizController = require('../controllers/quiz_controller');
+
+/* GET home pagina. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Quiz Curso MiriadaX' });
 });
+/*
+rutas pregunta y respuesta
+*/
+router.get('/quizes/question',quizController.question);
+router.get('/quizes/answer',quizController.answer);
 router.get('/author',function(req,res){
     res.render('author',{title:'Creditos'})
 });
